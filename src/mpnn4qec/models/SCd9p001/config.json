@@ -1,0 +1,21 @@
+{
+  "model": "SCd9p001",
+  "family": "surface",
+  "code_parameters": [
+    81,
+    1,
+    9
+  ],
+  "p": 0.001,
+  "rounds": 9,
+  "detectors": 720,
+  "hidden": 64,
+  "layers": 5,
+  "score": "scalar success logit",
+  "sha256": {
+    "graph.npz": "6b05af6e99e79e2aaa910205e37e56f88edd5e072d8e94d7bb6dc3eb162e3cca",
+    "circuit.stim": "969a4fa9676a64e363887da30b6d6ae7801ce3401f81aa14b2edf72917f80f36",
+    "SCd9p001.safetensors": "f925e8d6fb216c929109261d3701469b3a559852f85868934aed6a13a0d98740"
+  },
+  "weights_file": "SCd9p001.safetensors"
+}
