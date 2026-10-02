@@ -1,0 +1,21 @@
+{
+  "model": "SCd5p001",
+  "family": "surface",
+  "code_parameters": [
+    25,
+    1,
+    5
+  ],
+  "p": 0.001,
+  "rounds": 5,
+  "detectors": 120,
+  "hidden": 64,
+  "layers": 3,
+  "score": "scalar success logit",
+  "sha256": {
+    "graph.npz": "49d5f5f2b5e709340fbc3e2c6bf19c2968d20fa8cc9d393b8e36b3140f366c16",
+    "circuit.stim": "340de2731f9148b8da891541644047f316658f0df4ba6067cf99b4f9b90fa380",
+    "SCd5p001.safetensors": "35884cdf06622270b93f4ddc0668d834225a19814d6b6188c1ff12870811417b"
+  },
+  "weights_file": "SCd5p001.safetensors"
+}
