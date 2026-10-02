@@ -1,0 +1,21 @@
+{
+  "model": "SCd7p003",
+  "family": "surface",
+  "code_parameters": [
+    49,
+    1,
+    7
+  ],
+  "p": 0.003,
+  "rounds": 7,
+  "detectors": 336,
+  "hidden": 64,
+  "layers": 4,
+  "score": "scalar success logit",
+  "sha256": {
+    "graph.npz": "71f7dab11da94d10c7f53c728c04f15ef136e217b6fd9e9575f7f50069d2b90c",
+    "circuit.stim": "423a2a32f028fda5e55666b53ccc145d5dba3fa4bd67f5f9c6becae7f4039c75",
+    "SCd7p003.safetensors": "fffe5cb6a9fa2c91807d79dfcc341e213b246c0b212ec94282b0bd98f0f16c4d"
+  },
+  "weights_file": "SCd7p003.safetensors"
+}
