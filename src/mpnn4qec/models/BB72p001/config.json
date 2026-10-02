@@ -1,0 +1,30 @@
+{
+  "model": "BB72p001",
+  "family": "bb",
+  "code_parameters": [
+    72,
+    12,
+    6
+  ],
+  "p": 0.001,
+  "rounds": 6,
+  "detectors": 252,
+  "hidden": 32,
+  "layers": 4,
+  "score": "sum of log sigmoid of per-logical success logits",
+  "sha256": {
+    "graph.npz": "b1d389fd34568b37f0268b54f4cd3235326d60fc7b2b772b7ed404bb33fa99f9",
+    "circuit.stim": "16d84942a1249801aa1178e8ef1463aba54f86ccbf8ba97acee5e264273b524f",
+    "BB72p001.safetensors": "38ada96734f4b7f7d3d60cef56ffb3206404978302cf6472a0e14510f011f58e"
+  },
+  "bp": {
+    "method": "minimum_sum",
+    "scaling_factor": 0.625,
+    "max_iter": 30,
+    "schedule": "parallel",
+    "posterior_transport": "float32 to float16 to float32",
+    "feature_clip": 60,
+    "feature_scale": 20
+  },
+  "weights_file": "BB72p001.safetensors"
+}
