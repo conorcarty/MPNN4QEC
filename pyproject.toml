@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MPNN4QEC"
+dynamic = ["version"]
+description = "Pretrained graph neural post-selectors for quantum error correction"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_LICENSE"]
+authors = [{ name = "Conor Carty" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26,<3",
+    "torch>=2.5,<3",
+    "safetensors>=0.4,<1",
+    "scipy>=1.11,<2",
+    "stim>=1.15,<2",
+    "ldpc>=2.3.10,<3",
+    "pymatching>=2.3,<3",
+    "matplotlib>=3.8,<4",
+]
+keywords = ["quantum error correction", "post-selection", "graph neural network"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+Repository = "https://github.com/conorcarty/MPNN4QEC"
+
+[project.scripts]
+mpnn4qec-score = "mpnn4qec.cli:score"
+mpnn4qec-curve = "mpnn4qec.cli:curve"
+
+[tool.setuptools.dynamic]
+version = { attr = "mpnn4qec.__version__" }
+
+[tool.setuptools.package-data]
+mpnn4qec = ["models/*/*"]
